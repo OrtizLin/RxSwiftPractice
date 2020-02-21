@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appManager: AppManager!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Start
+        window = UIWindow()
+        appManager = AppManager(window: window!)
+        appManager.start()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

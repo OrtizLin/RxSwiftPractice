@@ -1,0 +1,6 @@
+module Pods_RxSwiftPracticeTests {
+  umbrella header "Pods-RxSwiftPracticeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
